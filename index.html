@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รีวิวจังหวัดนครศรีธรรมราช</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #2980b9;
+        }
+        .tab {
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: background-color 0.3s, border-bottom 0.3s;
+        }
+        .tab:hover,
+        .tab.active {
+            background-color: #1a5276;
+            border-bottom: 2px solid white;
+        }
+        .content {
+            display: none;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .content.active {
+            display: block;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>รีวิวจังหวัดนครศรีธรรมราช</h1>
+        <p>เมืองแห่งวัฒนธรรมและธรรมชาติที่งดงาม</p>
+    </header>
+
+    <!-- แถบแท็บ -->
+    <div class="tabs">
+        <div class="tab active" data-tab="tourist">สถานที่ท่องเที่ยว</div>
+        <div class="tab" data-tab="accommodation">ที่พักแนะนำ</div>
+        <div class="tab" data-tab="tradition">ประเพณีท้องถิ่น</div>
+        <div class="tab" data-tab="food">อาหารท้องถิ่น</div>
+        <div class="tab" data-tab="about">ผู้จัดทำ</div>
+    </div>
+
+    <!-- เนื้อหาแท็บ -->
+    <div id="tourist" class="content active">
+        <h2>สถานที่ท่องเที่ยวยอดนิยม</h2>
+        <ul>
+            <li>
+                <h3>1. วัดพระมหาธาตุวรมหาวิหาร</h3>
+                <img src="images/วัดพระมหาธาตุวรมหาวิหาร.jpg" alt="วัดพระมหาธาตุวรมหาวิหาร" width="700">
+                <p>วัดคู่บ้านคู่เมืองนครศรีธรรมราช มีเจดีย์ศักดิ์สิทธิ์บรรจุพระบรมสารีริกธาตุ</p>
+            </li>
+            <li>
+                <h3>2. หมู่บ้านคีรีวง</h3>
+                <img src="images/หมู่บ้านคีรีวง.jpg" alt="หมู่บ้านคีรีวง" width="700">
+                <p>หมู่บ้านท่ามกลางธรรมชาติที่ได้ชื่อว่าอากาศดีที่สุดในประเทศไทย</p>
+            </li>
+            <li>
+                <h3>3. หาดขนอม</h3>
+                <img src="images/หาดขนอม.jpg" alt="หาดขนอม" width="700">
+                <p>ชายหาดสวยงามเงียบสงบ จุดชมโลมาสีชมพูที่มีชื่อเสียง</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="accommodation" class="content">
+        <h2>ที่พักแนะนำ</h2>
+        <ul>
+            <li>
+                <h3>1. บ้านไร่ชายเขา ฟาร์มสเตย์</h3>
+                <img src="images/บ้านไร่ชายเขา ฟาร์มสเตย์.jpg" alt="บ้านไร่ชายเขา ฟาร์มสเตย์" width="700">
+                <p>ที่พักท่ามกลางธรรมชาติ บรรยากาศอบอุ่น เหมาะแก่การพักผ่อน</p>
+            </li>
+            <li>
+                <h3>2. อนาวิลล่า ตังเก รีสอร์ท</h3>
+                <img src="images/อนาวิลล่า ตังเก รีสอร์ท.jpg" alt="อนาวิลล่า ตังเก รีสอร์ท" width="700">
+                <p>ที่พักริมทะเล พร้อมวิวพระอาทิตย์ตกสวยงาม</p>
+            </li>
+            <li>
+                <h3>3. โรงแรมทวินโลตัส</h3>
+                <img src="images/โรงแรมทวินโลตัส.jpg" alt="โรงแรมทวินโลตัส" width="700">
+                <p>โรงแรมหรูในเมืองนครศรีธรรมราช สิ่งอำนวยความสะดวกครบครัน</p>
+            </li>
+        </ul>
+    </div>
+<div id="tradition" class="content">
+    <h2>ประเพณีท้องถิ่น</h2>
+    <ul>
+        <li>
+            <h3>1. ประเพณีแห่ผ้าขึ้นธาตุ</h3>
+            <p>จัดขึ้นเพื่อแสดงความเคารพต่อพระบรมธาตุเจดีย์ โดยประชาชนจะร่วมกันแห่ผ้าพระบฏไปห่มองค์พระบรมธาตุ</p>
+        </li>
+        <li>
+            <h3>2. ประเพณีสารทเดือนสิบ</h3>
+            <p>ประเพณีทำบุญเพื่ออุทิศส่วนกุศลให้กับบรรพบุรุษ พร้อมกิจกรรมที่แสดงถึงความกตัญญูของชาวใต้</p>
+        </li>
+        <li>
+            <h3>3. ประเพณีชักพระ</h3>
+            <p>จัดขึ้นช่วงออกพรรษา โดยมีการชักเรือพระประดิษฐานพระพุทธรูปตามถนนเพื่อให้ประชาชนได้สักการะ</p>
+        </li>
+        <li>
+        </li>
+    </ul>
+</div>
+
+    <div id="food" class="content">
+        <h2>อาหารท้องถิ่น</h2>
+        <ul>
+            <li>
+                <h3>1. ขนมจีนเมืองคอน</h3>
+                <img src="images/ขนมจีนเมืองคอน.jpg" alt="ขนมจีนเมืองคอน" width="700">
+                <p>เส้นขนมจีนสด เสิร์ฟพร้อมน้ำยาหลายชนิด รสชาติกลมกล่อม</p>
+            </li>
+            <li>
+                <h3>2. ไก่ทอดขมิ้น</h3>
+                <img src="images/ไก่ทอดขมิ้น.jpg" alt="ไก่ทอดขมิ้น" width="700">
+                <p>ไก่ทอดหอมกลิ่นขมิ้น รสชาติอร่อยเฉพาะตัว</p>
+            </li>
+            <li>
+                <h3>3. แกงส้มปลากระบอก</h3>
+                <img src="images/แกงส้มปลากระบอก.jfif" alt="แกงส้มปลากระบอก" width="700">
+                <p>แกงส้มใต้รสจัดจ้าน ใส่ปลากระบอกสดจากท้องถิ่น</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="about" class="content">
+        <h2>ผู้จัดทำ</h2>
+        <img src="images/ผู้จัดทำ.jpg" alt="ผู้จัดทำ" width="700">
+        <p><strong>ชื่อ:</strong> กันธิชา สุทธิใจ MMT36642N 366427241045</p>
+        <p><strong>แรงบันดาลใจ:</strong> เพื่อเผยแพร่ข้อมูลที่เป็นประโยชน์เกี่ยวกับจังหวัดนครศรีธรรมราช และส่งเสริมการท่องเที่ยว</p>
+    </div>
+
+    <footer>
+        <p>© 2024 รีวิวจังหวัดนครศรีธรรมราช - สร้างโดย กันธิชา สุทธิใจ MMT36642N 366427241045</p>
+    </footer>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
